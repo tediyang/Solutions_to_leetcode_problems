@@ -16,3 +16,5 @@ class Solution:
             if root.left == None and root.right == None and root.val == 0:
                 return None
         return root
+
+        
