@@ -14,6 +14,7 @@ int sumBase(int n, int k)
     return (result); 
 }
 
+/* Test Cases */
 int main(void)
 {
     int case1 = sumBase(34, 6);
