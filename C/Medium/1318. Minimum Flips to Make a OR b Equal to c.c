@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 
 int minFlips(int a, int b, int c) {
