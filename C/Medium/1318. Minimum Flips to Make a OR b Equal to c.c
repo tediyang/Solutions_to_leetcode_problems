@@ -14,18 +14,18 @@ int minFlips(int a, int b, int c) {
 		while ((a_ | b_) != c_) {
 			/* if c == '1' then we only have to flip either a or b 
 			   but if c == '0' we have to check either a or b to flip */
-			if (c_ == '1') {
-				flip++;
-				a_ = '1';
-			}
-			if (c_ == '0' && a_ == '1')
+			if (c_ == '1')
 			{
 				flip++;
-				a_ = '0';
+				break;
 			}
-			if (c_ == '0' && b_ == '1') {
-				flip++;
-				b_ = '0';
+			else
+			{
+				if (c_ == '0' && a_ == '1')
+					flip++;
+				if (c_ == '0' && b_ == '1')
+					flip++;
+				break;
 			}
 		}
 
