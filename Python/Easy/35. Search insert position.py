@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
         for i, n in enumerate(nums):
@@ -16,8 +18,3 @@ class Solution:
                 
             else:
                 return i+1
-                    
-                
-          
-                            
-        
