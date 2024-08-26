@@ -18,8 +18,8 @@ class Solution:
 
   def get_post_traverse(self, node: TreeNode) -> None:
     if node != None:
-      self.postorderTraversal(self.get_left(node))
-      self.postorderTraversal(self.get_right(node))
+      self.get_post_traverse(self.get_left(node))
+      self.get_post_traverse(self.get_right(node))
       self.answer.append(node.val)
 
   def get_right(self, node):
